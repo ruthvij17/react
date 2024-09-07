@@ -20,12 +20,14 @@ const App = () => {
       <Route
         path="/functional-components"
         element={
-          <FunctionComponents
-            name={name}
-            age={10}
-            author={author}
-            setName={setName}
-          />
+          <BaseHOC>
+            <FunctionComponents
+              name={name}
+              age={10}
+              author={author}
+              setName={setName}
+            />
+          </BaseHOC>
         }
       />
     </Routes>
